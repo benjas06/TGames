@@ -17,8 +17,8 @@ Route::get('/', function () {
 
 Route::get('/info'. function(){
     return view('paginas/informacion');
-})
+});
 
 Route::get('/contacto'. function(){
     return view('paginas.contacto');
-})
+});
