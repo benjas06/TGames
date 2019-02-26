@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Contacto</title>
-</head>
+@extends ('layouts.app')
+
+@section ('content')
 <body>
     <h1>Contacto</h1>
 </body>
-</html>
+@endsection
