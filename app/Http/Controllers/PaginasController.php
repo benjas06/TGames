@@ -24,4 +24,9 @@ class PaginasController extends Controller
             'nombre_completo' => $nombre . ' ' . $apellido
         ]);
     }
+
+    public function equipo()
+    {
+        return view('paginas.equipo');
+    }
 }
