@@ -16,6 +16,8 @@ class CreaTablaJuegos extends Migration
         Schema::create('juegos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
+            $table->string('genero');
+            $table->string('plataforma');
             $table->timestamps();
         });
     }
