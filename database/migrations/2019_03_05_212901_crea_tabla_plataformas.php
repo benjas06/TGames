@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreaTablaJuegos extends Migration
+class CreaTablaPlataformas extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,10 @@ class CreaTablaJuegos extends Migration
      */
     public function up()
     {
-        Schema::create('juegos', function (Blueprint $table) {
+        Schema::create('plataformas', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
-            $table->string('genero');
-            $table->unsignedInteger('plataforma_id');
             $table->timestamps();
-
-            //$table->foreign('plataforma_id')->references('id')->on('plataformas');
-            //$table->foreign('plataforma_id')->references('id')->on('plataformas');
-
         });
     }
 
@@ -33,6 +27,6 @@ class CreaTablaJuegos extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('juegos');
+        Schema::dropIfExists('plataformas');
     }
 }
