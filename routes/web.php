@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/juegos', 'JuegosController@index')->name('juegos.index');
+
+
+
 Route::get('/informacion', 'PaginasController@informacion');
 Route::get('/contacto', 'PaginasController@contacto');
 Route::get('/equipo', 'PaginasController@equipo')->name('equipo');
