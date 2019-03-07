@@ -2,16 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\DB;
+//use Illuminate\Support\Facades\DB;
+use App\Juegos;
 use Illuminate\Http\Request;
 
 class JuegosController extends Controller
 {
     public function index()
     {
-        $jueg= DB::table('juegos')
+        $jueg = Juegos::all();
+
+        //$jueg= DB::table('juegos')
         //->where('id','1')
-        ->get();
+        //->get();
 
         return view('juegos.juegos', compact('jueg'));
     }
