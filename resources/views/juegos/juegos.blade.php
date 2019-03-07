@@ -8,10 +8,10 @@
         <table class="table">
             <thead>
                 <tr>
-                <th>id</th>
-                <th>nombre</th>
-                <th>genero</th>
-                <th>plataforma</th>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Genero</th>
+                <th>Plataforma</th>
                 </tr>
             </thead>
             <tbody>
