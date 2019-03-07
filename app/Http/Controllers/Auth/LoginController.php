@@ -27,6 +27,14 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/home';
 
+    //redirijimos a la pestaña juegos al iniciar sesion
+    protected function redirectTo()
+    {
+        session(['apodo' => 'benja']);
+
+        return '/juegos';
+    }
+
     /**
      * Create a new controller instance.
      *
