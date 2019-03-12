@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/inicio', function () {
+    return view('paginas.inicio');
+});
+
 Route::get('/juegos', 'JuegosController@index')->name('juegos.index');
 
 
