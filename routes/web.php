@@ -11,6 +11,17 @@
 |
 */
 
+/*Route::get('/plataforma','PlataformaController@index');
+Route::get('/plataforma/create','PlataformaController@create');
+Route::post('/plataforma/create','PlataformaController@store');
+Route::get('/plataforma/{id}','PlataformaController@show');
+Route::get('/plataforma/edit','PlataformaController@edit');
+Route::post('/plataforma/edit','PlataformaController@update');
+Route::post('/plataforma/delete','PlataformaController@delete');*/
+
+//te evita todo el codigo de arriba
+Route::resource('/plataformas','PlataformaController');
+
 Route::get('/', function () {
     return view('welcome');
 });
