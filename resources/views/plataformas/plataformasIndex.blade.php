@@ -13,7 +13,7 @@
             <ul class="breadcrumb">
               <li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
               <li><a href="#">Pages</a><i class="icon-angle-right"></i></li>
-              <li class="active">404 Error page</li>
+              <li class="active">listado de plataformas</li>
             </ul>
           </div>
         </div>
