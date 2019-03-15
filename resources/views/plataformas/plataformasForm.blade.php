@@ -21,7 +21,7 @@
     </section>
     <section id="content">
         <div class="container">
-        <h1>hola mundo</h1>
+        <!--<h1>hola mundo</h1>-->
         <div class="row">
             <div class="col-md-8 offset-2">
                 <form action="{{route('plataformas.store')}}"method="POST">
