@@ -24,11 +24,16 @@
         <!--<h1>hola mundo</h1>-->
         <div class="row">
             <div class="col-md-8 offset-2">
-                <form action="{{route('plataformas.store')}}"method="POST">
+                @if(isset($plataforma))
+                  <form action="{{route('plataformas.update', $plataforma->id)}}"method="POST">
+                  <input type="hidden" name="_method" value="PATCH">
+                @else
+                  <form action="{{route('plataformas.store')}}"method="POST">
+                @endif
                 @csrf
                 <div class="form-group">
                     <label for="nombre">Nombre: </label>
-                    <input type="name" class="form-control" name="nombre" id="nombre" aria-describedby="emailHelp" placeholder="nombre">
+                <input type="name" class="form-control" value="{{$plataforma->plataforma ?? ''}}" name="nombre" id="nombre" aria-describedby="emailHelp" placeholder="nombre">
                 </div>
                 <br>
                 <button type="submit" class="btn btn-primary">enviar</button>

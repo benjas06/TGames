@@ -54,7 +54,7 @@ class PlataformaController extends Controller
      */
     public function show(Plataforma $plataforma)
     {
-        //
+        return view('plataformas.plataformasShow', compact('plataforma'));
     }
 
     /**
@@ -65,7 +65,7 @@ class PlataformaController extends Controller
      */
     public function edit(Plataforma $plataforma)
     {
-        //
+        return view('plataformas.plataformasForm', compact('plataforma'));
     }
 
     /**
@@ -77,7 +77,11 @@ class PlataformaController extends Controller
      */
     public function update(Request $request, Plataforma $plataforma)
     {
-        //
+        $plataforma->plataforma = $request->input('plataforma');
+        $plataforma->nombre=$request->nombre;
+        $plataforma->save;
+
+        return redirect()->route('plataformas.show', $plataforma->id);
     }
 
     /**
@@ -88,6 +92,8 @@ class PlataformaController extends Controller
      */
     public function destroy(Plataforma $plataforma)
     {
-        //
+        //dd('llegue a borrar');
+        $plataforma->delete();
+        return redirect()->route('plataformas.index');
     }
 }

@@ -29,16 +29,20 @@
                   </tr>
               </thead>
               <tbody>
-              @foreach ($plataformas as $plataforma)
                   <tr class="table-dark">
                       <td>{{ $plataforma->id}}</td>
                       <td>{{ $plataforma->nombre}}</td>
 
                       <td>
-                      <a href="{{route('plataformas.show', $plataforma->id)}}" class="btn btn-info">detalle</a>
+
+                      <a href="route{{'plataformas.edit', $plataforma->id}}" class="btn btn-sm btn-warning">editar</a>
+                        <form action="{{route('plataformas.destroy', $plataforma->id)}}" method="POST">
+                            <input type="hidden" name="_method" value="DELETE">
+                            @csrf
+                            <button class="btn btn-sm btn-danger">borrar</button>
+                        </form>
                       </td>
                   </tr>
-              @endforeach
               </tbody>
           </table>
 	    </div>
