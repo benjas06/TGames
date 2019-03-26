@@ -26,9 +26,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/inicio', function () {
+/*Route::get('/inicio', function () {
     return view('paginas.inicio');
-});
+});*/
+
+Route::get('/inicio', 'PaginasController@inicio')->name('paginas.inicio');
 
 Route::get('/juegos', 'JuegosController@index')->name('juegos.index');
 

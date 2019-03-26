@@ -11,7 +11,7 @@
           </div>
           <div class="span8">
             <ul class="breadcrumb">
-              <li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+            <li><a href="{{route('paginas.inicio')}}"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
               <li><a href="#">Pages</a><i class="icon-angle-right"></i></li>
               <li class="active">listado de plataformas</li>
             </ul>

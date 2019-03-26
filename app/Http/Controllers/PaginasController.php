@@ -29,4 +29,9 @@ class PaginasController extends Controller
     {
         return view('paginas.equipo');
     }
+
+    public function inicio()
+    {
+        return view('paginas.inicio');
+    }
 }
