@@ -13,7 +13,7 @@
             <ul class="breadcrumb">
             <li><a href="{{route('paginas.inicio')}}"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
               <li><a href="#">Pages</a><i class="icon-angle-right"></i></li>
-              <li class="active">404 Error page</li>
+              <li class="active">inicio</li>
             </ul>
           </div>
         </div>

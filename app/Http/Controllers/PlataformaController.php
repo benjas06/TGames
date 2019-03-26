@@ -36,6 +36,10 @@ class PlataformaController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'plataforma'=>'required|max:255'
+        ]);
+
         //dd('entra al metodo post');
         //dd($request->all());
         $pla = new plataforma();
@@ -77,6 +81,10 @@ class PlataformaController extends Controller
      */
     public function update(Request $request, Plataforma $plataforma)
     {
+        $request->validate([
+            'plataforma'=>'required|max:255'
+        ]);
+
         $plataforma->plataforma = $request->input('plataforma');
         $plataforma->nombre=$request->nombre;
         $plataforma->save;

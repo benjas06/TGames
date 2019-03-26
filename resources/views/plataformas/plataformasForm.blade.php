@@ -24,6 +24,15 @@
         <!--<h1>hola mundo</h1>-->
         <div class="row">
             <div class="col-md-8 offset-2">
+                @if($errors->any())
+                  <div class="alert alert-danger">
+                    <ul>
+                      @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                @endif
                 @if(isset($plataforma))
                   <form action="{{route('plataformas.update', $plataforma->id)}}"method="POST">
                   <input type="hidden" name="_method" value="PATCH">
@@ -33,7 +42,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="nombre">Nombre: </label>
-                <input type="name" class="form-control" value="{{$plataforma->plataforma ?? ''}}" name="nombre" id="nombre" aria-describedby="emailHelp" placeholder="nombre">
+                <input type="name" class="form-control" value="{{$plataforma->plataforma ?? ''}}{{old('nombre')}}" name="nombre" id="nombre" aria-describedby="emailHelp" placeholder="nombre">
                 </div>
                 <br>
                 <button type="submit" class="btn btn-primary">enviar</button>
