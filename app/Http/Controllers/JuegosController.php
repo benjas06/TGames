@@ -19,3 +19,4 @@ class JuegosController extends Controller
         return view('juegos.juegos', compact('jueg'));
     }
 }
+//crear store Auth::id

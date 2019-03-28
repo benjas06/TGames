@@ -17,10 +17,10 @@ class CreaTablaJuegos extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->string('genero');
-            $table->unsignedInteger('plataforma_id');
+            $table->unsignedInteger('user_id');
             $table->timestamps();
 
-            //$table->foreign('plataforma_id')->references('id')->on('plataformas');
+            $table->foreign('user_id')->references('id')->on('users');
             //$table->foreign('plataforma_id')->references('id')->on('plataformas');
 
         });
