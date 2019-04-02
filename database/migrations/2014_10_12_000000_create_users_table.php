@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            //$table->foreign('juego_id')->references('id')->('juegos');
+            //$table->foreign('juego_id')->references('id')->on('juegos');
         });
     }
 
