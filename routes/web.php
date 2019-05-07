@@ -23,7 +23,7 @@ Route::post('/plataforma/delete','PlataformaController@delete');*/
 Route::resource('/plataformas','PlataformaController');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('paginas.inicio');
 });
 
 /*Route::get('/inicio', function () {
