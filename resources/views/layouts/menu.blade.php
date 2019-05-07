@@ -1,11 +1,6 @@
 <!-- start header -->
 <header>
       <div class="container">
-        <!-- hidden top area toggle link -->
-        <div id="header-hidden-link">
-          <a href="#" class="toggle-link" title="Click me you'll get a surprise" data-target=".hidden-top"><i></i>Open</a>
-        </div>
-        <!-- end toggle link -->
         <div class="row nomargin">
           <div class="span12">
             <div class="headnav">
@@ -114,8 +109,9 @@
         </div>
         <div class="row">
           <div class="span4">
+            <!--LOGO-->
             <div class="logo">
-              <a href="index.html"><img src="{{asset('img/logo.png')}}" alt="" class="logo" /></a>
+              <a href="{{route('paginas.inicio')}}"><img src="{{asset('img/logo.png')}}" alt="" class="logo" /></a>
               <h1>Flat and trendy bootstrap template</h1>
             </div>
           </div>
@@ -125,11 +121,11 @@
                 <nav>
                   <ul class="nav topnav">
                     <li class="dropdown">
-                      <a href="index.html">Home <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
+                      <a href="{{route('paginas.inicio')}}">Home <i class="icon"></i></a>
+                      {{-- <ul class="dropdown-menu">
                         <li><a href="index-alt2.html">Homepage 2</a></li>
                         <li><a href="index-alt3.html">Homepage 3</a></li>
-                      </ul>
+                      </ul> --}}
                     </li>
                     <li class="dropdown">
                       <a href="#">Features <i class="icon-angle-down"></i></a>
