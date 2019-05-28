@@ -23,7 +23,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{asset('ico/apple-touch-icon-114-precomposed.png')}}" />
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{asset('ico/apple-touch-icon-72-precomposed.png')}}" />
   <link rel="apple-touch-icon-precomposed" href="{{asset('ico/apple-touch-icon-57-precomposed.png')}}" />
-  <link rel="shortcut icon" href="{{asset('ico/favicon.png')}}" />
+  <link rel="shortcut icon" href="{{asset('ico/123.png')}}" />
 
   <!-- =======================================================
     Theme Name: Flattern
@@ -41,17 +41,15 @@
 				<div class="row">
 					<div class="span3">
 						<div class="widget">
-							<h5 class="widgetheading">Browse pages</h5>
+							<h5 class="widgetheading">Buscar paginas</h5>
 							<ul class="link-list">
-								<li><a href="#">About our company</a></li>
-								<li><a href="#">Our services</a></li>
-								<li><a href="#">Meet our team</a></li>
-								<li><a href="#">Explore our portfolio</a></li>
-								<li><a href="#">Get in touch with us</a></li>
+								<li><a href="#">Sobre nosostros</a></li>
+								<li><a href="#">Nuestros servicios</a></li>
+								<li><a href="#">Conoce nuestro equipo</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="span3">
+					{{-- <div class="span3">
 						<div class="widget">
 							<h5 class="widgetheading">Important stuff</h5>
 							<ul class="link-list">
@@ -62,8 +60,8 @@
 								<li><a href="#">Flattern forum</a></li>
 							</ul>
 						</div>
-					</div>
-					<div class="span3">
+					</div> --}}
+					{{-- <div class="span3">
 						<div class="widget">
 							<h5 class="widgetheading">Flickr photostream</h5>
 							<div class="flickr_badge">
@@ -72,18 +70,18 @@
 							<div class="clear">
 							</div>
 						</div>
-					</div>
+					</div> --}}
 					<div class="span3">
 						<div class="widget">
-							<h5 class="widgetheading">Get in touch with us</h5>
+							<h5 class="widgetheading">Contactate con nosotros</h5>
 							<address>
-								<strong>Flattern studio, Pte Ltd</strong><br>
-								 Springville center X264, Park Ave S.01<br>
-								 Semarang 16425 Indonesia
+								<strong>TGames</strong><br>
+								 Vinuesa 112 esquina nuestra señora de las mercedes, Hacienda santa fe<br>
+								 Tlajomulco de zuñiga, Jalisco
 					 		</address>
 							<p>
-								<i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
-								<i class="icon-envelope-alt"></i> email@domainname.com
+								<i class="icon-phone"></i> (33) 1597-1287 - 3334598499 <br>
+								<i class="icon-envelope-alt"></i> benjaminne15@hotmail.com
 							</p>
 						</div>
 					</div>
@@ -95,7 +93,7 @@
 						<div class="span6">
 							<div class="copyright">
 								<p>
-									<span>&copy; Flattern - All right reserved.</span>
+									<span>&copy; TGames - Todos los derechos reservados.</span>
 								</p>
 								<div class="credits">
                   <!--
@@ -104,17 +102,17 @@
                     Licensing information: https://bootstrapmade.com/license/
                     Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
                   -->
-                  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                  {{-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> --}}
                 </div>
 							</div>
 						</div>
 						<div class="span6">
 							<ul class="social-network">
-								<li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a></li>
-								<li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>
-								<li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square"></i></a></li>
-								<li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square"></i></a></li>
-								<li><a href="#" data-placement="bottom" title="Google plus"><i class="icon-google-plus icon-square"></i></a></li>
+								<li><a href="https://www.facebook.com/" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a></li>
+								<li><a href="https://twitter.com/?lang=es" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>
+								<li><a href="https://mx.linkedin.com/" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square"></i></a></li>
+								<li><a href="https://www.pinterest.com.mx/" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square"></i></a></li>
+								{{-- <li><a href="#" data-placement="bottom" title="Google plus"><i class="icon-google-plus icon-square"></i></a></li> --}}
 							</ul>
 						</div>
 					</div>
