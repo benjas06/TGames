@@ -21,6 +21,7 @@ Route::post('/plataforma/delete','PlataformaController@delete');*/
 
 //te evita todo el codigo de arriba
 Route::resource('/plataformas','PlataformaController');
+Route::resource('/juegos','JuegosController');
 
 Route::get('/', function () {
     return view('paginas.inicio');
@@ -32,7 +33,7 @@ Route::get('/', function () {
 
 Route::get('/inicio', 'PaginasController@inicio')->name('paginas.inicio');
 
-Route::get('/juegos', 'JuegosController@index')->name('juegos.index');
+//Route::get('/juegos', 'JuegosController@index')->name('juegos.index');
 
 
 
