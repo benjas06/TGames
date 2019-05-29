@@ -134,6 +134,8 @@
                         <li><a href="{{ action('JuegosController@create') }}">Agregar juegos</a></li>
                         <li><a href="{{ route('plataformas.index') }}">Plataformas</a></li>
                         <li><a href="{{ action('PlataformaController@create') }}">Agregar plataformas</a></li>
+                        <li><a href="{{ route('genero.index') }}">Genero</a></li>
+                        <li><a href="{{ action('GeneroController@create') }}">Agregar genero</a></li>
                       </ul>
                     </li>
                     <li class="dropdown">

@@ -36,6 +36,11 @@ class JuegosController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'nombre' => 'required|min:2|max:255',
+            'genero' => 'required|min:3|max:20',
+        ]);
+
         $jueg = new Juegos();
         $jueg->nombre = $request->input('nombre');
         $jueg->genero = $request->genero;
