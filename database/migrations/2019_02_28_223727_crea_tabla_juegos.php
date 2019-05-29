@@ -16,9 +16,8 @@ class CreaTablaJuegos extends Migration
         Schema::create('juegos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
-            $table->string('clave');
             $table->string('genero');
-            $table->unsignedInteger('user_id');
+            //$table->unsignedInteger('user_id');
             $table->timestamps();
 
             //$table->foreign('user_id')->references('id')->on('users');

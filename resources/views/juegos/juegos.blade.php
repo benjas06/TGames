@@ -29,6 +29,7 @@
                 <th>Nombre</th>
                 <th>Genero</th>
                 <th>Plataforma</th>
+                <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,6 +39,9 @@
                     <td>{{ $jue->nombre}}</td>
                     <td>{{ $jue->genero}}</td>
                     <td>{{ $jue->plataforma_id}}</td>
+                    <td>
+                        <a href="{{ route('juegos.show', $jue->id) }}"class="btn btn-info">Detalle</a>
+                    </td>
                 </tr>
             @endforeach
             </tbody>

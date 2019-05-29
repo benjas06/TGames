@@ -37,7 +37,7 @@ class PlataformaController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'plataforma'=>'required|max:255'
+            'nombre'=>'required|min:1'
         ]);
 
         //dd('entra al metodo post');

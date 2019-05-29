@@ -37,8 +37,8 @@ class JuegosController extends Controller
     public function store(Request $request)
     {
         $jueg = new Juegos();
-        $jueg->juego = $request->input('nombre');
-        $jueg->clave = $request->clave;
+        $jueg->nombre = $request->input('nombre');
+        $jueg->genero = $request->genero;
         $jueg->save();
 
         return redirect()->route('juegos.index');
@@ -47,45 +47,50 @@ class JuegosController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Juegos  $juego
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Juegos $juego)
     {
-        //
+        return view('juegos.juegosShow', compact('juego'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Juegos  $juego
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Juegos $juego)
     {
-        //
+        return view('juegos.juegosForm', compact('juego'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Juegos  $juego
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Juegos $juego)
     {
-        //
+        $juego->juego = $request->input('juegos');
+        $juego->nombre=$request->nombre;
+        $juego->save;
+        
+        return redirect()->route('juegos.show', $juego->id);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Juegos  $juego
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Juegos $juego)
     {
-        //
+        $juego->delete();
+        return redirect()->route('juegos.index');
     }
 }

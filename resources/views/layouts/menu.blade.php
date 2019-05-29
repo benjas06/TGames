@@ -128,7 +128,13 @@
                       </ul> --}}
                     </li>
                     <li class="dropdown">
-                      <a href="{{ route('juegos.index') }}">JUEGOS <i class="icon"></i></a>
+                      <a href="#">JUEGOS <i class="icon"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="{{ route('juegos.index') }}">Juegos</a></li>
+                        <li><a href="{{ action('JuegosController@create') }}">Agregar juegos</a></li>
+                        <li><a href="{{ route('plataformas.index') }}">Plataformas</a></li>
+                        <li><a href="{{ action('PlataformaController@create') }}">Agregar plataformas</a></li>
+                      </ul>
                     </li>
                     <li class="dropdown">
                       <a href="#">PC <i class="icon"></i></a>
