@@ -44,7 +44,7 @@
                                         <td>{{ $juego->nombre }}</td>
                                         <td>{{ $juego->genero }}</td>
                                         <td>
-                                            <a href=" route{{ 'juegos.edit', $juego->id }}" class="btn btn-sm btn-warning">Editar</a>
+                                            <a href="{{ route ('juegos.edit', $juego->id )}}" class="btn btn-sm btn-warning">Editar</a>
                 
                                             <form action="{{ route('juegos.destroy', $juego->id) }}" method="POST">
                                                 <input type="hidden" name="_method" value="DELETE">

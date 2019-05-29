@@ -44,7 +44,7 @@
                                         <td>{{ $genero->nombre }}</td>
                                         <td>{{ $genero->genero }}</td>
                                         <td>
-                                            <a href=" route{{ 'genero.edit', $genero->id }}" class="btn btn-sm btn-warning">Editar</a>
+                                            <a href="{{  route ('genero.edit', $genero->id )}}" class="btn btn-sm btn-warning">Editar</a>
                 
                                             <form action="{{ route('genero.destroy', $genero->id) }}" method="POST">
                                                 <input type="hidden" name="_method" value="DELETE">

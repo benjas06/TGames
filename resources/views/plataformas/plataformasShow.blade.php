@@ -35,9 +35,9 @@
 
                       <td>
 
-                      <a href="route{{'plataformas.edit', $plataforma->id}}" class="btn btn-sm btn-warning">editar</a>
+                      <a href="{{ route('plataformas.edit', $plataforma->id)}}" class="btn btn-sm btn-warning">editar</a>
                       
-                        <form action="{{route('plataformas.destroy', $plataforma->id)}}" method="POST">
+                        <form action="{{  }}route('plataformas.destroy', $plataforma->id)}}" method="POST">
                             <input type="hidden" name="_method" value="DELETE">
                             @csrf
                             <button class="btn btn-sm btn-danger">borrar</button>

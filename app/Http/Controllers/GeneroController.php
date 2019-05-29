@@ -75,7 +75,7 @@ class GeneroController extends Controller
     public function update(Request $request, Genero $genero)
     {
         $genero->genero = $request->input('genero');
-        $genero->nombre=$request->nombre;
+        $genero->nombre = $request->nombre;
         $genero->save;
         
         return redirect()->route('genero.show', $genero->id);

@@ -37,8 +37,8 @@
                                   </ul>
                                 </div>
                               @endif
-                                @if(isset($gen))
-                                <form action="{{ route('genero.update', $gen->id) }}" method="POST">
+                                @if(isset($genero))
+                                <form action="{{ route('genero.update', $genero->id) }}" method="POST">
                                     <input type="hidden" name="_method" value="PATCH">
                             @else
                                 <form action="{{ route('genero.store') }}" method="POST">
@@ -48,7 +48,7 @@
                                 <div class="form-group">
                                   <label class="form-label">Genero</label>
                                   {{-- <input type="text" class="form-control" name="nombre" placeholder="Nombre del juego"> --}}
-                                  <input type="text" class="form-control" name="nombre" value="{{ isset($gen) ? $gen->nombre : '' }}{{ old('nombre') }}" placeholder="Nombre del genero">
+                                  <input type="text" class="form-control" name="nombre" value="{{ isset($genero) ? $genero->nombre : '' }}{{ old('nombre') }}" placeholder="Nombre del genero">
                                   @if ($errors->has('nombre'))
                                       <span class="alert alert-danger">
                                           <strong>{{ $errors->first('nombre') }}</strong>
